@@ -1,0 +1,572 @@
+@import url('https://fonts.googleapis.com/css2?family=Alex+Brush&family=Great+Vibes&family=Lobster&family=Lora:ital,wght@1,600&family=Monoton&family=Open+Sans:ital,wght@1,300&family=Pacifico&family=Roboto&family=Roboto+Slab&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&family=Monoton&family=Pacifico&display=swap');
+@keyframes animate{
+  0%
+    {
+     background-position: 0%;
+   }
+  100%
+     {
+      background-position: 400%;
+      }
+}
+body{
+background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0,0)),url("../pic/bg6.png");
+background-repeat: repeat-y;
+background-size: cover;
+background-position: center;
+
+}
+
+*{
+  margin: 0;
+  padding: 0;
+  
+}
+
+
+.banner{
+width: 100%;
+height: 100vh;
+background-image: linear-gradient(rgba(0, 0, 0, 0.85),rgba(0,0,0,0.85)),url("../pic/bg1.png");
+background-size: cover;
+background-position: center;
+}
+/*-------------------------------------welcomepage-------------------------------------*/
+.content{
+width: 100%;
+position: absolute;
+top: 55%;
+transform: translateY(-50%);
+text-align: center;
+color: #fff;
+}
+.content h1{
+font-size: 50px;
+margin-top: 50px;
+}
+.content h3{
+margin: 20px auto;
+font-weight: 100;
+line-height: 25px;
+}
+button{
+width: 200px;
+padding: 15px 0;
+text-align: center;
+margin: 20px 10px;
+border-radius: 25px;
+font-weight: bold;
+border: 2px solid #C69320;
+background: transparent;
+color: #fff;
+cursor: pointer;
+position: relative;
+overflow: hidden;
+}
+span{
+background: #C69320;
+height: 100%;
+width: 0;
+border-radius: 25px;
+position: absolute;
+left: 0;
+bottom: 0;
+z-index: -1;
+transition: 0.5s;
+}
+button:hover span{
+width: 100%;
+}
+button:hover{
+border: none;
+}
+a:link{
+text-decoration: none;
+}
+a:hover{
+text-decoration: none;
+}
+a:active {
+  color: blue;
+}
+/*------------------------------------------------------------*/
+
+/*------------------------------- Menu bar--------------------------------- */
+
+.navbar{
+width: 91%;
+margin: 50px 0px;
+padding: 20px 40px;
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.logo{
+width: 95px;
+}
+
+.navbar1{
+background: rgba(113,125,126,0.6);
+border-radius: 25px;
+}
+
+.navbar ul li{
+list-style: none;
+display: inline-block;
+margin: 0px 20px;
+position: relative;
+
+}
+.navbar ul li a{
+text-decoration: none;
+color: #fff;
+text-transform: uppercase;
+font-weight: bold;
+}
+
+
+
+
+
+
+
+.navbar ul li::after{
+content:'';
+height: 3px;
+width: 0;
+background: rgba(0,0,0,0.7);
+position: absolute;
+left: 0;
+bottom: -10px;
+transition: 0.5s;
+}
+.navbar ul li:hover::after{
+width: 100%;
+}
+
+
+
+
+
+
+/*---------------------------------------------------------*/
+
+/*---------------------barberking----------------------*/
+.vid{
+width: 100%;
+height: 50%;
+position: absolute;
+overflow: hidden;
+background:url('../pic/int31.png');
+background-size: cover;
+background-position: center;
+box-shadows: 1;
+text-align: center;
+border-radius: 25px;
+font-size: 3em;
+font-weight: bold;
+top: -170px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+border: 2px solid #C69320;
+}
+#title{
+color:blue;
+padding-bottom: 200px;
+margin-bottom: 200px;
+}
+.vid1{
+background: linear-gradient(90deg, #ff0000,#ffff00,#ff00f3,#0033ff,#ff00c4,#ff0000);
+background-size: 400%;
+-webkit-text-fill-color: transparent;
+-webkit-background-clip: text;
+animation: animate 10s linear infinite;
+}
+/*---------------------Banner1&container----------------------------------------------------*/
+.banner1{
+width: 92%;
+margin-left: 4%;
+margin-right: 4%;
+height: 190vh;
+background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0,0)),url("../pic/bg2.png");
+background-repeat: repeat-y;
+background-size: cover;
+background-position: center;
+border-radius: 25px;
+box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+}
+
+.container{
+position: relative;
+width: 1200px;
+height: 300px;
+margin: 240px auto;
+
+}
+/*--------------------------------------------------Option haircuts p-------------*/
+.container .box{
+position: relative;
+width: calc(400px - 30px);
+height: calc(300px - 30px);
+background: rgba(0,0,0,0.5);
+float: right;
+margin: 15px;
+box-sizing: border-box;
+overflow: hidden;
+border-radius: 25px;
+top:100px;
+box-shadow: 0px 2px 8px 0px #333;
+border: 2px solid #C69320;
+}
+.container .box .p1{
+position: absolute; 
+top: 0px;
+left: 0;
+width: 100%;
+height: 100%;
+background-image:url("../pic/city1.png");
+background-size: cover;
+background-position: center;
+
+cursor: pointer;
+overflow: hidden;
+transition: 0.5s;
+}
+
+
+
+
+
+
+
+
+
+.container .box .p1:hover{
+width: 100%;
+}
+.container .box .p1 h2{
+font-famil: 'Lobster', cursive;
+font-family: 'Lora', serif;
+color: #C69320;
+font-size: 45px;
+font-weight: 2em;
+top: 274px;
+ }
+.container .box .p2{
+position: absolute; 
+top: 0px;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: url("../pic/city2.png");
+background-size: cover;
+background-position: center;
+}
+.container .box .p2 h2{
+font-famil: 'Lobster', cursive;
+font-family: 'Lora', serif;
+color: #C69320;
+font-size: 45px;
+font-weight: 2em;
+top: 274px;
+
+}
+.container .box .p3{
+position: absolute; 
+top: 0px;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0,0)),url("../pic/city3.png");
+background-size: cover;
+background-position: center;
+}
+.container .box .p3 h2{
+font-famil: 'Lobster', cursive;
+font-family: 'Lora', serif;
+color: #C69320;
+font-size: 45px;
+font-weight: 2em;
+top: 274px;
+
+}
+.container .box .p4{
+position: absolute; 
+top: 0px;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0,0)),url("../pic/city4.png");
+background-size: cover;
+background-position: center;
+border-radius: 0px;
+}
+.container .box .p4 h2{
+font-famil: 'Lobster', cursive;
+font-family: 'Lora', serif;
+color: #C69320;
+font-size: 45px;
+font-weight: 2em;
+top: 274px;
+
+}
+.container .box .p5{
+position: absolute; 
+top: 0px;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0,0)),url("../pic/city5.png");
+background-size: cover;
+background-position: center;
+
+border-radius: 0px;
+}
+.container .box .p5 h2{
+font-family: 'Lora', serif;
+color: #C69320;
+font-size: 45px;
+font-weight: 2em;
+top: 274px;
+
+}
+.container .box .p6{
+position: absolute; 
+top: 0px;
+left: 0;
+width: 100%;
+height: 100%;
+background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0,0)),url("../pic/city6.png");
+background-size: cover;
+background-position: center;
+border-radius: 0px;
+}
+.container .box .p6 h2{
+font-famil: 'Lobster', cursive;
+font-family: 'Lora', serif;
+color: #C69320;
+font-size: 45px;
+font-weight: 2em;
+top: 274px;
+
+}
+/*----------------------- text  ----------------------------*/
+
+.box{
+display: flex;
+justify-content: center;
+align-items: center;
+min-height: 50vh;
+background: #000;
+}
+.box h2{
+position: relative;
+background: rgba(0,0,0,0.5);
+text-align: center;
+margin: 0;
+top: 243px;
+font-size: 3em;
+font-weight: 700;
+z-index: 1;
+overflow: hidden;
+border-radius: 25px;
+}
+
+
+
+
+/*----------------------Banner2&container2---------------------------------------------------*/
+
+.banner2{
+width: 92%;
+margin-left: 4%;
+margin-right: 4%;
+height: 110vh;
+background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0,0)),url("../pic/bg2.png");
+background-repeat: repeat-y;
+background-size: cover;
+background-position: center;
+border-radius: 25px;
+display: flex;
+justify-items: center;
+align-items: center;
+}
+
+.container2{
+display: flex;
+justify-content: space-between;
+align-items: center;
+flex-wrap: wrap;
+position: relative;
+width: 92%;
+height: 92%;
+
+
+background: ;
+border-radius: 25px;
+overflow: hidden;
+}
+.box2{
+position: absolute;
+width: 1100px;
+top: 50%;
+left: 50%;
+transform: translate(-50%,-50%);
+padding: 15px;
+margin: 20px;
+box-sizing: border-box;
+background:url('../pic/star.gif');
+box-shadow: 0 5px 15px rgba(0,0,0,0.5);
+display: flex;
+border-radius: 25px;
+border: 2px solid #C69320;
+}
+.box2 .imge{
+width: 400px;
+flex: 0 0 400px;
+box-shadow: 0px 2px 8px 0px #333;
+border-radius: 25px;
+
+}
+.box2 .imge img{
+max-width: 100%;
+border-radius: 25px;
+box-shadow: 0px 2px 8px 0px #333;
+}
+.box2 .content2{
+padding-left: 20px;
+padding-right: 10px;
+background: rgba(113,125,126,0.4);
+border-radius: 25px;
+margin: 0px 20px 0px 20px;
+box-shadow: 0px 2px 8px 0px #333;
+}
+.box2 .content2 h2{
+margin: 0;
+padding-left: 0px;
+text-align: center;
+}
+.box2 .content2 p{
+padding: 10px 0 0;
+margin: 0;
+color:#fff;
+}
+/*--------------------------------------------------------------------------*/
+
+
+p{
+font-famil: 'Great Vibes', cursive;
+font-family: 'Lora', serif;
+letter-spacing: 2px;
+font-weight: 5px;
+}
+.content2{
+border: 2px solid #C69320;
+}
+.content2 p{
+font-size: 25px;
+font-family: 'Lora', serif;
+}
+.content2 h2{
+
+font-family: 'Lora', serif;
+color: #C69320;
+font-size: 50px;
+font-weight: 2em;
+}
+h1{
+font-family: 'Lora', serif;
+font-famil: 'Monoton', cursive;
+
+}
+}
+#text{
+color: #d0d0d0;
+}
+
+
+
+
+
+
+
+
+/*---------------------------------Banner4&Container4-----------------------------------*/
+
+.banner4{
+width: 92%;
+margin-left: 4%;
+margin-right: 4%;
+height: 50vh;
+padding: auto;
+margin: auto;
+background-image: linear-gradient(rgba(0, 0, 0, 0),rgba(0,0,0,0)),url("../pic/bg2.png");
+background-repeat: repeat-y;
+background-size: cover;
+background-position: center;
+border-radius: 25px;
+}
+.banner4 h2{
+padding:20px;
+text-align: center;
+color: #d0d0d0;
+}
+.banner4 p{
+color: #000;
+line-height: 200%;
+font-size: 18px;
+backgroun: rgba(255,255,255,0.4);
+}
+.container4{
+align-items: center;
+justify-content: space-between;
+position: relative;
+width: 1200px;
+height: 300px;
+margin: 30px auto;
+}
+.sbox{
+width: 120vh;
+margin: 10px auto;
+padding: auto;
+display: flex;
+align-items: center;
+justify-content: space-between;
+background-color:;
+border-radius: 25px;
+}
+
+
+
+
+.container4 h2{
+font-famil: 'Lobster', cursive;
+font-family: 'Lora', serif;
+font-size: 50px;
+font-weight: 2em;
+color:#fff;
+opacity:0.7;
+}
+
+
+
+.inst{
+width: 66px;
+}
+#bye{
+text-align: center;
+color:#fff;
+opacity:0.7;
+font-size: 2em;
+font-weight: 700;
+background: none;
+}
+.phone{
+background: rgba(255,255,255,.4);
+border-radius: 25px;
+padding-left: 40px;
+margin-left: 25px;
+margin-right: 25px;
+border: 2px solid #C69320;
+}
